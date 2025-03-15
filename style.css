@@ -323,8 +323,8 @@ section {
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .experience-details-container {
@@ -429,4 +429,53 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* TECH STACK SECTION */
+
+.tech-stack-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.tech-category {
+  background: rgb(250, 250, 250);
+  border-radius: 1.5rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  padding: 1.5rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+  padding: 0.5rem;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+}
+
+.tech-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.tech-item p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgb(85, 85, 85);
+  margin-top: 0.25rem;
 }
